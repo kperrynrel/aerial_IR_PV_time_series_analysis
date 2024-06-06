@@ -1,0 +1,14 @@
+[
+  {
+    "system_name": "NREL RSF II",
+    "system_id": 1283,
+    "defect_geojson_path": "./geojsons/NREL-zeitview-report.geojson",
+    "site_layout_geojson_path": "./geojsons/NREL_RSF_II.geojson",
+    "time_series_data_path": "./full_time_series/C1283.csv",
+    "scan_date": "6/21/2023",
+    "latitude": 39.7409,
+    "longitude": -105.171,
+    "mount": "fixed",
+    "system_number_modules": 1866
+  }
+]
