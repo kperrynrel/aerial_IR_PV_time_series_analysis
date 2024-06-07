@@ -103,10 +103,10 @@ class DataFusion:
         """
         if self.by_site:
             defect_df['defect_count'] = defect_df.groupby(
-                "system_id")['defect_id'].transform("count")
+                ["system_id", "defect_id"])['defect_id'].transform("count")
         if self.by_block:
             defect_df['defect_count'] = defect_df.groupby(
-                "inv_block")['defect_id'].transform("count")
+                ["inv_block", "defect_id"])['defect_id'].transform("count")
         defect_df['defect_percentage'] = 100 * defect_df[
             'defect_count']/total_module_count
         return defect_df
